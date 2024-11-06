@@ -1,12 +1,24 @@
 # Importing required modules
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import shutil
 import imghdr
 import process_data
 import build_model
 
+# Run with uvicorn app:app
+
 # Initialize the FastAPI app
 app = FastAPI()
+
+# Ensure the FastAPI server allows requests from the frontend origin by configuring CORS properly
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.retrain_countdown = 10
 

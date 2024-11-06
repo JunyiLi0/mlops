@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing import image as image_utils
 import numpy as np
 from PIL import Image
 
-folder_path = "/mnt/c/Users/ASUS/OneDrive/Bureau/Cours/MLOPS/app/data/"
+folder_path = "data/"
 model = load('../best_model.joblib')
 order = load('../label_order.joblib')
 
