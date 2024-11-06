@@ -9,4 +9,4 @@ Run the server with:
 `uvicorn app:app`
 
 Send a image to the app with:
-curl -F file=@test0.png http://127.0.0.1:8000/upload/
+`curl -F file=@test0.png http://127.0.0.1:8000/upload/`
