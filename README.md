@@ -1,6 +1,6 @@
 # mlops
 
-This small project takes an image of a handwritten chinese character digit from 0 to 9 and predicts it.
+This small project takes an image of a handwritten chinese digit character and predicts it.
 
 Download the dataset here:  
 https://www.kaggle.com/datasets/gpreda/chinese-mnist/data
